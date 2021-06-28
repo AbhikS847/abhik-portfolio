@@ -5,4 +5,30 @@
 
 h2{
     color:#005a8a;
+    animation-name: fadeInIntroImages;
+    animation-duration: 2s;
+}
+
+h1{
+    color:#FFF;
+    text-shadow: 2px 2px 4px #000000;
+    animation-name: fadeInIntroImages;
+    animation-duration: 2s;
+}
+
+#introImages{
+    width:25%;
+    height:50%;
+    border-top: 3px solid #FFF;
+    animation-name: fadeInIntroImages;
+    animation-duration: 5s;
+}
+
+@keyframes fadeInIntroImages{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity:100%;
+    }
 }
