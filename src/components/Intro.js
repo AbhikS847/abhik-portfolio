@@ -3,7 +3,16 @@ import abhik5 from '../images/abhik5.jpg';
 import abhik2 from '../images/abhik2.jpg';
 import abhik3 from '../images/abhik3.jpg';
 import abhik4 from '../images/abhik4.jpg';
-import {Row,Col,Container,Card,Button} from 'react-bootstrap';
+import icon1 from '../icons/icon1.png';
+import icon2 from '../icons/icon2.png';
+import icon3 from '../icons/icon3.png';
+import icon4 from '../icons/icon4.png';
+import icon5 from '../icons/icon5.png';
+import icon6 from '../icons/icon6.png';
+import icon7 from '../icons/icon7.png';
+import icon8 from '../icons/icon8.png';
+import {Row,Col,Container,Card,Button,Image} from 'react-bootstrap';
+
 
 const Intro = () => {
 
@@ -30,9 +39,23 @@ const Intro = () => {
   <Card.Body>
     <Card.Title>Front-End | Back-End | Games</Card.Title>
     <Card.Text>
-    Developing a peak interest in computers since the age of 10. I have always enjoyed working with software and technology
+    Developing a peak interest in computers since the age of 10. I have always enjoyed working with software and
+    technology. I am always learning and debugging! The execution is always near perfection but I don't mind some flaws from
+    time to time, it helps me become a better programmer.
     </Card.Text>
     <Button variant="primary">Work History</Button>
+    <hr></hr>
+    <div className="small py-2"><b>My go-to for development</b></div>
+    <div class="d-flex justify-content-center">
+    <Image src={{icon1}} roundedCircle />
+    <Image src={{icon2}} roundedCircle />
+    <Image src={{icon3}} roundedCircle />
+    <Image src={{icon4}} roundedCircle />
+    <Image src={{icon5}} roundedCircle />
+    <Image src={{icon6}} roundedCircle />
+    <Image src={{icon7}} roundedCircle />
+    <Image src={{icon8}} roundedCircle />
+    </div>
   </Card.Body>
 </Card>
                 </Col>
