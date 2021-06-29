@@ -11,7 +11,7 @@ import icon5 from '../icons/icon5.png';
 import icon6 from '../icons/icon6.png';
 import icon7 from '../icons/icon7.png';
 import icon8 from '../icons/icon8.png';
-import {Row,Col,Container,Card,Button,Image} from 'react-bootstrap';
+import {Row,Col,Container,Card,Button,Carousel,Image} from 'react-bootstrap';
 
 
 const Intro = () => {
@@ -46,15 +46,23 @@ const Intro = () => {
     <Button variant="primary">Work History</Button>
     <hr></hr>
     <div className="small py-2"><b>My go-to for development</b></div>
-    <div class="d-flex justify-content-center">
-    <Image src={{icon1}} roundedCircle />
-    <Image src={{icon2}} roundedCircle />
-    <Image src={{icon3}} roundedCircle />
-    <Image src={{icon4}} roundedCircle />
-    <Image src={{icon5}} roundedCircle />
-    <Image src={{icon6}} roundedCircle />
-    <Image src={{icon7}} roundedCircle />
-    <Image src={{icon8}} roundedCircle />
+    <div class="d-block-inline">
+    <Carousel controls={false}>
+  <Carousel.Item interval={2000}>
+  <div className="d-block">
+    <Image src={icon1} width="20%"></Image>
+    <Image src={icon2} width="20%"></Image>
+    <Image src={icon3} width="20%"></Image>
+    <Image src={icon4} width="20%"></Image>
+  </div>
+  </Carousel.Item>
+  <Carousel.Item interval={2000}>
+  <Image src={icon5} width="20%"></Image>
+    <Image src={icon6} width="20%"></Image>
+    <Image src={icon7} width="20%"></Image>
+    <Image src={icon8} width="20%"></Image>
+  </Carousel.Item>
+</Carousel>
     </div>
   </Card.Body>
 </Card>
