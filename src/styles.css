@@ -9,6 +9,11 @@ h2{
     animation-duration: 2s;
 }
 
+.btn.btn-primary{
+    background-color:#005a8a!important;
+    border:none;
+}
+
 h1{
     color:#FFF;
     text-shadow: 2px 2px 4px #000000;
