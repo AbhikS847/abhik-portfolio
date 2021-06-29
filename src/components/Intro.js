@@ -3,7 +3,7 @@ import abhik5 from '../images/abhik5.jpg';
 import abhik2 from '../images/abhik2.jpg';
 import abhik3 from '../images/abhik3.jpg';
 import abhik4 from '../images/abhik4.jpg';
-import { Jumbotron,Row,Col,Container,Card,Button} from 'react-bootstrap';
+import {Row,Col,Container,Card,Button} from 'react-bootstrap';
 
 const Intro = () => {
 
@@ -25,19 +25,19 @@ const Intro = () => {
               <Row>
                 <Col>
                 <h2><b>Software Engineer</b></h2>
-                <Card>
+                <Card id="cardFlip">
   <Card.Header as="h5" style={{backgroundColor:'#005a8a',color:'#FFF'}}><b>Career</b></Card.Header>
   <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
+    <Card.Title>Front-End | Back-End | Games</Card.Title>
     <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
+    Developing a peak interest in computers since the age of 10. I have always enjoyed working with software and technology
     </Card.Text>
     <Button variant="primary">Work History</Button>
   </Card.Body>
 </Card>
                 </Col>
                 <Col><h2><b>Illustrator</b></h2>
-                <Card>
+                <Card id="cardFlip">
   <Card.Header as="h5" style={{backgroundColor:'#005a8a',color:'#FFF'}}><b>Passion</b></Card.Header>
   <Card.Body>
     <Card.Title>Special title treatment</Card.Title>
@@ -49,7 +49,7 @@ const Intro = () => {
 </Card>
                 </Col>
                 <Col><h2><b>Musician</b></h2>
-                <Card>
+                <Card id="cardFlip">
   <Card.Header as="h5" style={{backgroundColor:'#005a8a',color:'#FFF'}}><b>Hobby</b></Card.Header>
   <Card.Body>
     <Card.Title>Special title treatment</Card.Title>

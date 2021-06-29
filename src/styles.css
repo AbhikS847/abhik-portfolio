@@ -29,6 +29,20 @@ h1{
     animation-duration: 5s;
 }
 
+#cardFlip{
+    animation-name:flipper;
+    animation-duration: 2s;
+}
+
+@keyframes flipper{
+    from{
+        transform:rotateX(90deg);
+    }
+    to{
+        transform:rotateX(0deg);
+    }
+}
+
 @keyframes fadeInIntroImages{
     from{
         opacity: 0%;
