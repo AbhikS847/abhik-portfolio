@@ -11,6 +11,10 @@ import icon5 from '../icons/icon5.png';
 import icon6 from '../icons/icon6.png';
 import icon7 from '../icons/icon7.png';
 import icon8 from '../icons/icon8.png';
+import icon9 from '../icons/icon9.png';
+import icon10 from '../icons/icon10.png';
+import icon11 from '../icons/icon11.png';
+import icon12 from '../icons/icon12.png';
 import {Row,Col,Container,Card,Button,Carousel,Image} from 'react-bootstrap';
 
 
@@ -51,16 +55,16 @@ const Intro = () => {
   <Carousel.Item interval={2000}>
   <div className="d-block">
     <Image src={icon1} width="20%"></Image>
-    <Image src={icon2} width="20%"></Image>
-    <Image src={icon3} width="20%"></Image>
-    <Image src={icon4} width="20%"></Image>
+    <Image src={icon2} width="15%"></Image>
+    <Image src={icon3} width="34%"></Image>
+    <Image src={icon4} width="30%"></Image>
   </div>
   </Carousel.Item>
   <Carousel.Item interval={2000}>
-  <Image src={icon5} width="20%"></Image>
-    <Image src={icon6} width="20%"></Image>
-    <Image src={icon7} width="20%"></Image>
-    <Image src={icon8} width="20%"></Image>
+    <Image className="mx-2" src={icon5} width="20%"></Image>
+    <Image className="mx-2" src={icon6} width="20%"></Image>
+    <Image className="mx-2" src={icon7} width="20%"></Image>
+    <Image className="mx-2"src={icon8} width="20%"></Image>
   </Carousel.Item>
 </Carousel>
     </div>
@@ -71,21 +75,31 @@ const Intro = () => {
                 <Card id="cardFlip">
   <Card.Header as="h5" style={{backgroundColor:'#005a8a',color:'#FFF'}}><b>Passion</b></Card.Header>
   <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
+    <Card.Title>Artwork | Logos | Cartoons</Card.Title>
     <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
+    I remember watching alot of animated series in my younger years, from the golden era of Cartoon
+    Network to the late Nickelodeon shows. Having grown up with such warm entertainment, out of interest, 
+    I like making my own characters, animating them, creating posters and love artwork. Over time, I have 
+    some rough edges or weird fill shapes and such, but it's what brands my passion!
     </Card.Text>
     <Button variant="primary">Gallery</Button>
   </Card.Body>
+  <hr></hr>
+  <div className="d-block-inline">
+    <Image className="mx-2" src={icon9} width="20%"></Image>
+    <Image className="mx-2" src={icon10} width="20%"></Image>
+    <Image className="mx-2" src={icon11} width="20%"></Image>
+    <Image className="mx-2" src={icon12} width="20%"></Image>
+    </div>
 </Card>
                 </Col>
                 <Col><h2><b>Musician</b></h2>
                 <Card id="cardFlip">
   <Card.Header as="h5" style={{backgroundColor:'#005a8a',color:'#FFF'}}><b>Hobby</b></Card.Header>
   <Card.Body>
-    <Card.Title>Special title treatment</Card.Title>
+    <Card.Title>Rock | Alternative | Indie</Card.Title>
     <Card.Text>
-      With supporting text below as a natural lead-in to additional content.
+
     </Card.Text>
     <Button variant="primary">Stream</Button>
   </Card.Body>
