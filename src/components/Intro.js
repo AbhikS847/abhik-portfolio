@@ -16,7 +16,9 @@ import icon10 from '../icons/icon10.png';
 import icon11 from '../icons/icon11.png';
 import icon12 from '../icons/icon12.png';
 import {Row,Col,Container,Card,Button,Carousel,Image} from 'react-bootstrap';
-
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 
 const Intro = () => {
 
@@ -36,7 +38,7 @@ const Intro = () => {
             </br></div>
             <Container className="text-center">
               <Row>
-                <Col>
+                <Col className="py-2" xs={12} sm={4}>
                 <h2><b>Software Engineer</b></h2>
                 <Card id="cardFlip">
   <Card.Header as="h5" style={{backgroundColor:'#005a8a',color:'#FFF'}}><b>Career</b></Card.Header>
@@ -52,7 +54,7 @@ const Intro = () => {
     <div className="small py-2"><b>My go-to for development</b></div>
     <div class="d-block-inline">
     <Carousel controls={false}>
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={5000}>
   <div className="d-block">
     <Image src={icon1} width="20%"></Image>
     <Image src={icon2} width="15%"></Image>
@@ -60,18 +62,18 @@ const Intro = () => {
     <Image src={icon4} width="30%"></Image>
   </div>
   </Carousel.Item>
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={5000}>
     <Image className="mx-2" src={icon5} width="20%"></Image>
     <Image className="mx-2" src={icon6} width="20%"></Image>
     <Image className="mx-2" src={icon7} width="20%"></Image>
-    <Image className="mx-2"src={icon8} width="20%"></Image>
+    <Image className="mx-2"src={icon8} width="15%"></Image>
   </Carousel.Item>
 </Carousel>
     </div>
   </Card.Body>
 </Card>
                 </Col>
-                <Col><h2><b>Illustrator</b></h2>
+                <Col className="py-2" xs={12} sm={4}><h2><b>Illustrator</b></h2>
                 <Card id="cardFlip">
   <Card.Header as="h5" style={{backgroundColor:'#005a8a',color:'#FFF'}}><b>Passion</b></Card.Header>
   <Card.Body>
@@ -86,26 +88,37 @@ const Intro = () => {
   </Card.Body>
   <hr></hr>
   <div className="d-block-inline">
-    <Image className="mx-2" src={icon9} width="20%"></Image>
-    <Image className="mx-2" src={icon10} width="20%"></Image>
-    <Image className="mx-2" src={icon11} width="20%"></Image>
-    <Image className="mx-2" src={icon12} width="20%"></Image>
+    <Image className="mx-2 mb-3" src={icon9} width="15%"></Image>
+    <Image className="mx-2 mb-3" src={icon10} width="15%"></Image>
+    <Image className="mx-2 mb-3" src={icon11} width="15%"></Image>
+    <Image className="mx-2 mb-3" src={icon12} width="15%"></Image>
     </div>
 </Card>
                 </Col>
-                <Col><h2><b>Musician</b></h2>
+                <Col className="py-2" xs={12} sm={4}><h2><b>Musician</b></h2>
                 <Card id="cardFlip">
   <Card.Header as="h5" style={{backgroundColor:'#005a8a',color:'#FFF'}}><b>Hobby</b></Card.Header>
   <Card.Body>
     <Card.Title>Rock | Alternative | Indie</Card.Title>
     <Card.Text>
-
+    I grew up listening to 80s rock, pop and 90's grunge music in the 2000's. As time went on I started
+    to listen to nu-metal, heavy metal and by the late 2010s I was a big Slipknot fan. Influenced by many
+    other bands, I have learnt to appreciate every genre that has instruments in it. By late 2013, I'd go 
+    out and book a jamming room with my friends. Ever since then I have composed, written and enjoyed making
+    my own music.
     </Card.Text>
     <Button variant="primary">Stream</Button>
+    <hr></hr>
+    <div className="d-block-inline">
+    <a target="_blank" rel="noreferrer" className="mx-2" href="https://www.instagram.com/abhikshrestha847/"><InstagramIcon style={{borderRadius:'20%',background:'linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)',color:'#FFF',fontSize:'3rem'}}/></a>
+    <a target="_blank" rel="noreferrer" className="mx-2" href="https://www.facebook.com/abhik.shrestha.7/videos_by"><FacebookIcon style={{fontSize:'3.4rem'}} /></a>
+    <a target="_blank" rel="noreferrer" className="mx-2" href="https://www.youtube.com/c/AbhikShrestha/videos"><YouTubeIcon style={{color:'red',fontSize:'3.4rem'}} /></a>
+    </div>
   </Card.Body>
 </Card>
                 </Col>
               </Row>
+              <h2 className="display-4 text-center">Beginnings</h2>
             </Container>
         </div>
     )
